@@ -18,7 +18,7 @@ body{
 	font-family: 'Roboto';
 	font-size: 15px;
 	text-align: justify;
-	background-color: #edfeff;
+	background-color: #daecef;
 	margin: 0px;
 	padding:0px;
 
@@ -31,9 +31,12 @@ h2{
 	font-family: 'Congradulations';
 	font-size: 30px;
 	margin-bottom: -20px;
-	
 
+}
 
+h3{
+	font-family: 'Lie to Me'; 
+	font-size: 60px;
 }
 
 img{
@@ -50,6 +53,8 @@ a:hover{
 	color: crimson;
 	font-weight: 900;
 }
+
+
 
 #menu{
 	font-family: 'Congradulations';
@@ -91,74 +96,6 @@ a:hover{
     display: block;
 }
 
-#hero img{
-	width: 100%;
-	border-radius: 0%;
-	z-index:2;
-	margin-bottom: 30px;
-
-}
-#hero #text{
-	color: white;
-	position: absolute;
-	text-align: center;
-	width: 100%;
-	margin: auto;
-
-
-}
-#hero h1{
-	font-family: 'Lie to Me';
-	font-size: 150px;
-	margin-bottom: -50px;
-}
-#hero h2{
-	font-family: 'Congradulations';
-	font-size: 50px;
-}
-
-.info{
-	padding-bottom: 30px;
-
-
-}
-
-
-.left{
-	width: 50% ;
-	float: left;
-	
-
-}
-.right{
-	width: 50%;
-	float: left;
-
-}
-.info p{
-	width: 250px;
-	
-}
-.info h2{
-	margin-top: 40px;
-}
-
-.left-content{
-	margin-right: 5%;
-	float: right;
-
-}
-.left-content h2{
-	text-align: right;
-
-}
-.right-content{
-	margin-left: 5%;
-	float: left;
-}
-#contactme{
-	text-align: center;
-}
 footer{
 	background-color: pink;
 }

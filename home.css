@@ -1,0 +1,68 @@
+#hero img{
+	width: 100%;
+	border-radius: 0%;
+	z-index:2;
+	margin-bottom: 30px;
+
+}
+#hero #text{
+	color: white;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+
+
+}
+#hero h1{
+	font-family: 'Lie to Me';
+	font-size: 150px;
+	margin-bottom: -50px;
+}
+#hero h2{
+	font-family: 'Congradulations';
+	font-size: 50px;
+}
+
+.info{
+	padding-bottom: 30px;
+
+
+}
+
+
+.left{
+	width: 50% ;
+	float: left;
+	
+
+}
+.right{
+	width: 50%;
+	float: left;
+
+}
+.info p{
+	width: 250px;
+	
+}
+.info h2{
+	margin-top: 40px;
+}
+
+.left-content{
+	margin-right: 5%;
+	float: right;
+
+}
+.left-content h2{
+	text-align: right;
+
+}
+.right-content{
+	margin-left: 5%;
+	float: left;
+}
+#contactme{
+	text-align: center;
+}
