@@ -67,6 +67,8 @@ a:hover{
 
 	
 }
+
+
 #menu img{
 	width: 80px;
 	padding-left: 20px;
@@ -84,6 +86,11 @@ a:hover{
 #menu li{
 	float: right;
 	width:100px;
+}
+
+#menu li a:hover{
+	font-size: 25px;
+	color: crimson;
 }
 
 #menu li a{

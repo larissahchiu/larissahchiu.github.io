@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>contact me</title>
+	<title>larissachiu - contact me</title>
+
+
+  	<link rel="stylesheet" href="js/animsition-master/dist/css/animsition.min.css">	
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  	<script src="js/animsition-master/dist/js/animsition.min.js"></script>
+
+	<script type="text/javascript" src="js/pace.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bounce.css">
 	<link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" type="text/css" href="aboutme.css">
+	<link rel="stylesheet" type="text/css" href="css/aboutme.css">
 </head>
 <body>
 <div id="container">
@@ -21,6 +29,8 @@
 
 	<div class="clear"></div>
 
+	<div class="animsition">
+
 	<h3 style="font-size: 100px; text-align: center; margin-top: 0px; padding-top: 8%;">Contact Me.</h3>
 	<div id="info" style="width: 40%;">
 		<center>
@@ -33,15 +43,18 @@
 			<br><br>
 			<h2>Fill out this form and I'll get back to you ASAP!</h2>
 
-			</center>
-			<p>Name: <input type="text" name="name">
-			<p>Email:  <input type="text" name="email"> </p>
-			<p>Comments:  <textarea></textarea> </p>
+			<form method="POST" action="http://www.usc.edu/cgi-bin/mail_form/larissac@usc.edu">
+			<p>Name: <input type="text" name="name"></p>
+			<p>Email:  <input type="email" name="email"> </p>
+			<p>Comments:  <input type="text" name="comments" style="height: 50px;"> </p>
 
-			<center>
 			<button style="font-family: 'Congradulations'; font-size: 20px; ">Submit</button>	
 				
+
+			</form>
+
 			</center>
+
 			
 		
 		
@@ -60,8 +73,39 @@
 
 			</div>
 
-		<footer>
+		</footer>
+
 	</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		  	$(".animsition").animsition({
+		    inClass: 'rotate-in',
+		    outClass: 'rotate-out',
+		    inDuration: 1500,
+		    outDuration: 800,
+		    linkElement: '.animsition-link',
+		    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+		    loading: true,
+		    loadingParentElement: 'body', //animsition wrapper element
+		    loadingClass: 'animsition-loading',
+		    loadingInner: '', // e.g '<img src="loading.svg" />'
+		    timeout: false,
+		    timeoutCountdown: 5000,
+		    onLoadEvent: true,
+		    browser: [ 'animation-duration', '-webkit-animation-duration'],
+		    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+		    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+		    overlay : false,
+		    overlayClass : 'animsition-overlay-slide',
+		    overlayParentElement : 'body',
+		    transition: function(url){ window.location.href = url; }
+		  });
+		});
+	</script>
+
+
 
 
 </body>

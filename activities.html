@@ -1,25 +1,34 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>activities</title>
+	<title>projects</title>
+
+	<link rel="stylesheet" href="js/animsition-master/dist/css/animsition.min.css">	
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  	<script src="js/animsition-master/dist/js/animsition.min.js"></script>
+
+	<script type="text/javascript" src="js/pace.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bounce.css">
 	<link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" type="text/css" href="projects.css">
+	<link rel="stylesheet" type="text/css" href="css/projects.css">
+
 </head>
 <body>
 <div id="container">
 	<div id="menu">
-	<a href="index.html"><img src="images/logo.png"></a>
+	<a href="index.html" class="animsition-link"><img src="images/logo.png"></a>
 		<ul>
-			<li><a href="contactme.html">Contact Me</a></li>
-			<li><a href="activities.html">Involvement</a></li>
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="aboutme.html">About Me</a></li>
+			<li><a href="contactme.html" class="animsition-link">Contact Me</a></li>
+			<li><a href="activities.html" class="animsition-link">Involvement</a></li>
+			<li><a href="projects.html" class="animsition-link">Projects</a></li>
+			<li><a href="aboutme.html" class="animsition-link">About Me</a></li>
 
 		</ul>
 	</div>
 
-	<div class="clear"></div>
+	<div class="animsition">
 
 	<h3 style="font-size: 100px; text-align: center; margin-top: 0px; padding-top: 8%;">Leadership and Involvement.</h3>
 
@@ -86,6 +95,35 @@
 
 		<footer>
 	</div>
+	</div>
+
+
+		<script type="text/javascript">
+		$(document).ready(function() {
+		  	$(".animsition").animsition({
+		    inClass: 'rotate-in',
+		    outClass: 'rotate-out',
+		    inDuration: 1500,
+		    outDuration: 800,
+		    linkElement: '.animsition-link',
+		    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+		    loading: true,
+		    loadingParentElement: 'body', //animsition wrapper element
+		    loadingClass: 'animsition-loading',
+		    loadingInner: '', // e.g '<img src="loading.svg" />'
+		    timeout: false,
+		    timeoutCountdown: 5000,
+		    onLoadEvent: true,
+		    browser: [ 'animation-duration', '-webkit-animation-duration'],
+		    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+		    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+		    overlay : false,
+		    overlayClass : 'animsition-overlay-slide',
+		    overlayParentElement : 'body',
+		    transition: function(url){ window.location.href = url; }
+		  });
+		});
+	</script>
 
 
 </body>
