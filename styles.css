@@ -1,127 +1,149 @@
-@font-face{
-	font-family: 'Maneo';
-	src: url('fonts/maneo/Maneo_TRIAL.ttf');
+/*@media (max-width: 991.98px) {
+
+
 }
-@font-face{
-	font-family: 'Roboto';
-	src: url('fonts/roboto/Roboto-Thin.ttf');
-}
-@font-face{
-	font-family:'Lie to Me';
-	src:url('fonts/lie_to_me/Lie to Me - TTF.ttf');
-}
-@font-face{
-	font-family: 'Congradulations';
-	src: url('fonts/congratulations/Congratulations_DEMO.ttf');
-}
-body{
-	font-family: 'Roboto';
-	font-size: 15px;
+@media (max-width: 1199.98px) {
+
+
+}*/
+html, body {
+	height: 100%;
 	text-align: justify;
-	background-color: #daecef;
-	margin: 0px;
-	padding:0px;
-
-}
-.clear{
-	clear: both;
 }
 
-h2{
-	font-family: 'Congradulations';
-	font-size: 30px;
-	margin-bottom: -20px;
-
+h1, h2, h3, h4, h5 {
+	Font-Family: 'Raleway', Sans-Serif;
+}
+p {
+	Font-Family: 'Open Sans', Sans-Serif;
 }
 
-h3{
-	font-family: 'Lie to Me'; 
-	font-size: 60px;
+#info {
+    background: linear-gradient(270deg, #8e9aaf, #cbc0d3, #efd3d7, #feeafa, #dee2ff);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: background-gradient 20s ease infinite;
+    -moz-animation: background-gradient 20s ease infinite;
+    animation: background-gradient 20s ease infinite;
 }
 
-img{
-	width: 250px;
+@-webkit-keyframes background-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes background-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes background-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+#info {
+	padding-top:15%;
+	padding-bottom: 15%;
+	/*background-color: pink;*/
+}
+
+#content {
+	padding-top:15%;
+	padding-left: 15%;
+	padding-right: 15%;
+	/*background-color: white;*/
+}
+
+
+/*Info*/
+#profile {
 	border-radius: 50%;
-	float: right;
+	margin-bottom: 20px;
+	max-height: 100%;
+	max-width: 100%;
+}
+#name {
+	margin-bottom: 20px;
+}
+#location {
+	margin-bottom: 20px;
+}
+.icon {
+	justify-content: center;
 }
 
-a{
-	color: pink;
-	text-decoration: none;
-}
-a:hover{
-	color: crimson;
-	font-weight: 900;
+.icon > img {
+	max-height: 100%;
+	max-width: 100%;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
 
+#icon:hover .overlay {
+  opacity: 1;
+}
 
-#menu{
-	font-family: 'Congradulations';
-	font-size: 20px;
-	background-color: white;
-	width: 100%;
-	position: fixed;
-	z-index: 2;
-	opacity: 0.75;
+.caption {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
-	
+/*Content*/
+.content-section {
+	margin-bottom: 10%;
+}
+
+.section-headers {
+	margin-bottom: 5%;
+}
+
+.progress {
+	background-color: whitesmoke;
+	margin-bottom: 15px;
 }
 
 
-#menu img{
-	width: 80px;
-	padding-left: 20px;
-	padding-right:20px;
-	float: left;
-	border-radius: 0%;
+
+.progress:nth-child(2) > div {
+	background-color: #feeafa;
+}
+.progress:nth-child(4) > div {
+	background-color: #dee2ff;
+}
+.progress:nth-child(6) > div {
+	background-color: #efd3d7;
+}
+.progress:nth-child(8) > div {
+	background-color: #cbc0d3;
+}
+.progress:nth-child(10) > div {
+	background-color: #8e9aaf;
 }
 
-#menu ul{
-	list-style: none;
-	float:right;
-	line-height: 45px;
-}
-
-#menu li{
-	float: right;
-	width:100px;
-}
-
-#menu li a:hover{
-	font-size: 22px;
-	color: crimson;
-}
-
-#menu li a{
-    text-align: center;
-    color: darkblue;
-    font-weight: 800;
-    text-decoration: none;
-    width: 100px;
-    height: 30px;
-    display: block;
-}
-
-footer{
-	background-color: pink;
-}
-footer #links{
-	
-	width: 20%;
-	margin: auto;
-}
-
-footer ul{
-	list-style: none;
-	display:block;
-}
-footer img{
-	width: 30px;
-
-}
-footer li{
-	margin:10px;
-	float: left;
-
+/*Footer*/
+#footer {
+	margin-bottom: 5%;
+	margin-top: 10%;
+	font-size: 10px;
 }

@@ -1,0 +1,127 @@
+@font-face{
+	font-family: 'Maneo';
+	src: url('fonts/maneo/Maneo_TRIAL.ttf');
+}
+@font-face{
+	font-family: 'Roboto';
+	src: url('fonts/roboto/Roboto-Thin.ttf');
+}
+@font-face{
+	font-family:'Lie to Me';
+	src:url('fonts/lie_to_me/Lie to Me - TTF.ttf');
+}
+@font-face{
+	font-family: 'Congradulations';
+	src: url('fonts/congratulations/Congratulations_DEMO.ttf');
+}
+body{
+	font-family: 'Roboto';
+	font-size: 15px;
+	text-align: justify;
+	background-color: #daecef;
+	margin: 0px;
+	padding:0px;
+
+}
+.clear{
+	clear: both;
+}
+
+h2{
+	font-family: 'Congradulations';
+	font-size: 30px;
+	margin-bottom: -20px;
+
+}
+
+h3{
+	font-family: 'Lie to Me'; 
+	font-size: 60px;
+}
+
+img{
+	width: 250px;
+	border-radius: 50%;
+	float: right;
+}
+
+a{
+	color: pink;
+	text-decoration: none;
+}
+a:hover{
+	color: crimson;
+	font-weight: 900;
+}
+
+
+
+#menu{
+	font-family: 'Congradulations';
+	font-size: 20px;
+	background-color: white;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	opacity: 0.75;
+
+	
+}
+
+
+#menu img{
+	width: 80px;
+	padding-left: 20px;
+	padding-right:20px;
+	float: left;
+	border-radius: 0%;
+}
+
+#menu ul{
+	list-style: none;
+	float:right;
+	line-height: 45px;
+}
+
+#menu li{
+	float: right;
+	width:100px;
+}
+
+#menu li a:hover{
+	font-size: 22px;
+	color: crimson;
+}
+
+#menu li a{
+    text-align: center;
+    color: darkblue;
+    font-weight: 800;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    display: block;
+}
+
+footer{
+	background-color: pink;
+}
+footer #links{
+	
+	width: 20%;
+	margin: auto;
+}
+
+footer ul{
+	list-style: none;
+	display:block;
+}
+footer img{
+	width: 30px;
+
+}
+footer li{
+	margin:10px;
+	float: left;
+
+}

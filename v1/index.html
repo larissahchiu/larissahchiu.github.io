@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>larissa chiu</title>
+
+  	<link rel="stylesheet" href="js/animsition-master/dist/css/animsition.min.css">	
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  	<script src="js/animsition-master/dist/js/animsition.min.js"></script>
+
+	<script type="text/javascript" src="js/pace.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bounce.css">
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+
+	<meta charset="utf-8">
+	<meta name="description" content="Hi, my name is Larissa Chiu. I am currently a computer science major at the University of Southern California. I am an aspiring software engineer interested in impacting a societal issue.">
+  	<meta name="keywords" content="Larissa, Chiu, USC, Computer Science, CS, web, developer, C++">
+  	<meta name="author" content="Larissa Chiu">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+</head>
+<body>
+
+
+<div id="container">
+	<div id="menu">
+	<a href="index.html" class="animsition-link"><img src="images/logo.png"></a>
+		<ul>
+			<li><a href="contactme.html" class="animsition-link">Contact Me</a></li>
+			<li><a href="activities.html" class="animsition-link">Involvement</a></li>
+			<li><a href="projects.html" class="animsition-link">Projects</a></li>
+			<li><a href="aboutme.html" class="animsition-link">About Me</a></li>
+
+		</ul>
+	</div>
+
+	<div class="clear"></div>
+
+		<div class="hero">
+			<img src="images/hero.jpg">
+		</div>
+
+
+	<div class="animsition">
+		<div class="hero">
+			<div id="text">
+				<h1>Larissa Chiu</h1>
+				<h2>developer, creator, innovator</h2>
+			</div>
+		</div>
+
+
+		<div id="more">
+
+			<div class="info">
+				<div class="left">
+				<div class="left-content">
+					<img src="images/me.jpg">
+				</div>
+			</div>
+			<div class="right">
+				<div class="right-content">
+					<h2>Hey there! I'm Larissa.</h2>
+					<p>I am currently a computer science major at the University of Southern California. I am an aspiring software engineer interested in impacting a societal issue. Click <a href="aboutme.html">here</a> to learn more about me!</p>
+				</div>
+			</div>
+
+			</div>
+			<div class="clear"></div>
+
+
+
+		<div class="info">
+			<div class="left">
+				<div class="left-content">
+					<h2>Technology Enthusiast</h2>
+					<p>I strive to become the best software developer I can be. Whether its experimenting with app development, or sharpening my skills in C++, you can always see me working on a side project. Check out my projects <a href="projects.html" class="animsition-link">here</a></p>
+				</div>
+			</div>
+			<div class="right">
+				<div class="right-content">
+					<img src="images/code.jpeg">
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="info">
+			<div class="left">
+				<div class="left-content">
+					<img src="images/volunteer.jpg">
+				</div>
+			</div>
+			<div class="right">
+				<div class="right-content">
+					<h2>Leadership and Service</h2>
+					<p>Along with my love of technology, I love giving back. Service is an essential part of my identity. Click <a href="activities.html" class="animsition-link">here</a> to learn more about my involvement and leadership</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="clear"></div>
+		</div>
+
+
+		<div id="contactme">
+			<h3>Let's keep in touch!</h3>
+			<p style="font-size: 20px;">Click <a href="contactme.html" class="animsition-link">here</a>  to find my contact info!</p>
+
+		<footer>
+			<div id="links">
+				<ul>
+					<li><a href="https://www.facebook.com/larissahchiu"><img src="images/fb.png"></a>  </li>
+					<li><a href="https://github.com/larissahchiu"><img src="images/git.png"></a> </li>
+					<li><a href="https://www.linkedin.com/in/larissa-c/"><img src="images/linkedin.png"></a> </li>
+				</ul>
+
+			</div>
+
+		</footer>
+
+	</div>
+	</div>
+
+	</div>
+
+<script type="text/javascript">
+		$(document).ready(function() {
+		  $(".animsition").animsition({
+		    inClass: 'fade-in-up',
+		    outClass: 'fade-out-up',
+		    inDuration: 1500,
+		    outDuration: 800,
+		    linkElement: '.animsition-link',
+		    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+		    loading: true,
+		    loadingParentElement: 'body', //animsition wrapper element
+		    loadingClass: 'animsition-loading',
+		    loadingInner: '', // e.g '<img src="loading.svg" />'
+		    timeout: false,
+		    timeoutCountdown: 5000,
+		    onLoadEvent: true,
+		    browser: [ 'animation-duration', '-webkit-animation-duration'],
+		    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+		    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+		    overlay : false,
+		    overlayClass : 'animsition-overlay-slide',
+		    overlayParentElement : 'body',
+		    transition: function(url){ window.location.href = url; }
+		  });
+		});
+	</script>
+
+
+
+
+
+</body>
+</html>
