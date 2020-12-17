@@ -1,0 +1,154 @@
+/*@media (max-width: 991.98px) {
+
+
+}
+@media (max-width: 1199.98px) {
+
+
+}*/
+html, body {
+	height: 100%;
+	text-align: justify;
+}
+
+h1, h2, h3, h4, h5 {
+	Font-Family: 'Raleway', Sans-Serif;
+}
+p {
+	Font-Family: 'Open Sans', Sans-Serif;
+}
+
+#info {
+    background: linear-gradient(270deg, #FFFFE5, #FDE984, #A3D8E6, #94A59B, #82CAA5);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: background-gradient 30s ease infinite;
+    -moz-animation: background-gradient 30s ease infinite;
+    animation: background-gradient 30s ease infinite;
+}
+
+@-webkit-keyframes background-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes background-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes background-gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+#info {
+	padding-top:15%;
+	padding-bottom: 15%;
+	/*background-color: pink;*/
+}
+
+#content {
+	padding-top:15%;
+	padding-left: 15%;
+	padding-right: 15%;
+	/*background-color: white;*/
+}
+
+
+/*Info*/
+#profile {
+	border-radius: 50%;
+	margin-bottom: 20px;
+	max-height: 100%;
+	max-width: 100%;
+}
+#name {
+	margin-bottom: 20px;
+}
+#location {
+	margin-bottom: 20px;
+}
+.icon {
+	justify-content: center;
+}
+
+.icon > img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+#icon:hover .overlay {
+  opacity: 1;
+}
+
+.caption {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*Content*/
+.content-section {
+	margin-bottom: 10%;
+}
+.section_icon {
+	vertical-align: top;
+	height: 30px;
+	width: 30px;
+}
+
+.section-headers {
+	margin-bottom: 5%;
+}
+
+.progress {
+	background-color: whitesmoke;
+	margin-bottom: 15px;
+}
+
+
+
+.progress:nth-child(2) > div {
+	background-color: #94A59B;
+}
+.progress:nth-child(4) > div {
+	background-color: #82CAA5;
+}
+.progress:nth-child(6) > div {
+	background-color: #A3D8E6;
+}
+.progress:nth-child(8) > div {
+	background-color: #FDE984;
+}
+.progress:nth-child(10) > div {
+	background-color: #FFFFE5;
+}
+
+/*Footer*/
+#footer {
+	margin-bottom: 5%;
+	margin-top: 10%;
+	font-size: 10px;
+}
