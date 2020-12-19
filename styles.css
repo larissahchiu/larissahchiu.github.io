@@ -89,7 +89,7 @@ p {
   max-width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: WHITE;
+  background-color: white;
 }
 
 .profile_container:hover .overlay {
